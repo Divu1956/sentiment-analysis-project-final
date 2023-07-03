@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .main-div{
+            background-color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
+            display: auto;
+            width: 100%;
+            height: 100%;
+            position:fixed;
+            padding:0;
+            margin:0;
+            /* border: 2px black solid; */
+            border-radius: 20%;
+            /* margin: 5% 5%; */
+            scroll-behavior: auto;
+            top:0;
+            left:0;
+        }
+
+        .content{
+            position: relative;
+            text-align: center;
+            top: 35%;
+            
+            margin: auto auto;
+        }
+        #return-button{
+            transition-duration: 0.4s;
+            text-align: center;
+            width: auto;
+            margin-left: 5%;
+            margin-right: 5%;
+            padding: 2% 5%;
+            background-color: #1c99f3; /* Green */
+            color: white;
+        }
+        
+        #return-button:hover {
+            background-color: white; /* Green */
+            color: #1c99f3;
+        }
+        
+    </style>
+    <div class="main-div">
+
+    <div class="content">
+    <h23>Prediction Output </h3>
+    <h1>Your Prediction for the given {{prediction_text}}</h1>
+    
+
+    <a href="/"><button id="return-button">Return to Home</button></a>
+
+    </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <style>
+            body{
+                margin: auto;
+                /* background-image: linear-gradient(red, yellow); */
+                background-image: url("https://wallpaperaccess.com/full/7408264.jpg");
+                /* opacity: 0.4; */
+            
+                background-size: cover;
+                background-repeat: no-repeat;
+                text-align: center;
+            }
+            .bg{
+                top:5%;
+        }
+        .main-div{
+            margin: 5% 10%;
+            text-align: center;
+            /* background-color: rgb(255, 255, 255); */
+            color: rgb(0, 0, 0);
+            display: auto;
+            opacity: 1;
+            background-color: white;
+            opacity: 0.85;
+            color: black;
+            width: 80%;
+            height: auto;
+            padding: 5% 1%;
+            position:fixed;
+            /* padding:5% 0%; */
+            /* margin:10% 10%; */
+            /* border: 2px black solid; */
+            border-radius: 5%;
+            /* margin: 5% 5%; */
+            scroll-behavior: auto;
+            top:0%;
+            left:0;
+        }
+        
+        .content{
+            position: relative;
+            text-align: center;
+            /* top: 40%; */
+            /* bottom: -10%; */
+            
+            margin: auto auto;
+        }
+        #return-button{
+            transition-duration: 0.4s;
+            text-align: center;
+            width: auto;
+            margin-left: 5%;
+            margin-right: 5%;
+            padding: 2% 5%;
+            background-color: #1c99f3; /* Green */
+            color: white;
+            font-size: 133%;
+            /* font-family: 'Courier New', Courier, monospace; */
+        }
+        #return-button-2{
+            margin-left: 5%;
+            margin-right: 5%;
+            padding: 2% 5%;
+            font-size: 133%;
+            background-color: whitesmoke;
+            border: 1px solid grey;
+        }
+        
+        #return-button:hover {
+            background-color: white; /* Green */
+            color: #1c99f3;
+        }
+        </style>
+    <div class="bg"></div>
+    <div class="main-div">
+        
+        <div class="content">
+    <h1><p>Welcome Here!</p></h1>
+    <div>
+        Sentiment analysis can be defined as analyzing the positive or negative sentiment of the customer in text. The contextual analysis of identifying information helps businesses understand their customers’ social sentiment by monitoring online conversations. 
+
+        As customers express their reviews and thoughts about the brand more openly than ever before, sentiment analysis has become a powerful tool to monitor and understand online conversations. Analyzing customer feedback and reviews automatically through survey responses or social media discussions allows you to learn what makes your customer happy or disappointed. Further, you can use this analysis to tailor your products and services to meet your customer’s needs and make your brand successful. 
+<br><br>
+        So, what are you waiting for? Start using this Right Now!!
+    </div>
+    <br><br>
+    <!-- {% for post in posts %}
+    <h1>{{ post }}</h1> -->
+    <!-- {% endfor %} -->
+    <form action="{{ url_for('predict')}}" method="post">
+    <!-- <form action="{{ url_for('predict')}}" method="post"></form> -->
+    <input type="text" placeholder="Enter Text" id="return-button-2"/>
+    <!-- <a href="/predict" method="post"> -->
+        <button type="submit" id="return-button">Predict</button>
+    <!-- </a> -->
+    
+</div>
+
+</div>
+    
+</form>
+<!-- <img src="./2005054.jpg" alt="gffgf"> -->
+</body>
+</html>
